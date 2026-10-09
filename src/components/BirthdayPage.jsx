@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import maggie from "../assets/maggie.png";
 import drawing from "../assets/drawing.png";
-import timelapse from "../assets/timelapse.mp4";
+import timelapse from "../assets/drawing-timelapse.mp4";
 import "./BirthdayPage.css";
 
 function BirthdayPage() {
