@@ -18,8 +18,6 @@ function App() {
   const [page, setPage] = useState("password");
   const [popupIndex, setPopupIndex] = useState(0);
 
-  const correctPassword = "1009"; 
-
   const handleNumber = (number) => {
     if (password.length < 4) {
       setPassword(password + number);
@@ -31,7 +29,7 @@ function App() {
   };
 
   const handleSubmit = () => {
-    if (password === correctPassword) {
+    if (password === import.meta.env.VITE_BIRTHDAY_PASSWORD) {
       setError("");
       setPage("welcome");
     } else {
